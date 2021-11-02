@@ -1,15 +1,11 @@
 package com.stan.prueba;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
-import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -23,14 +19,9 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.gms.tasks.Continuation;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -57,7 +48,6 @@ public class EditActivity extends AppCompatActivity {
     private ProgressDialog mProgressDialog;
     private static final int GALERY_INTENT = 1 ;
     private  static final int PERMISO_ALAMCENAMIENTO = 1000;
-    private static final int RESOURCE_ID =0;
 
     //Firebase Realtimer
     DatabaseReference mDatabaseReference = FirebaseDatabase.getInstance().getReference();

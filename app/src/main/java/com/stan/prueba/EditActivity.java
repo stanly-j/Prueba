@@ -205,7 +205,7 @@ public class EditActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == GALERY_INTENT){
+        if(requestCode == GALERY_INTENT && resultCode == RESULT_OK){
 
             mProgressDialog.setTitle("Subiendo Imagen ...");
             mProgressDialog.setMessage("Subiendo Foto a firebase");

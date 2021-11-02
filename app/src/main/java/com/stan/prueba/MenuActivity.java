@@ -34,7 +34,7 @@ public class MenuActivity extends AppCompatActivity {
         binding.appBarMenu.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Seleccione un items para editar", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Seleccione un items de la lista para editar", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
